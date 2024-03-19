@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
-{% block head %} {% endblock %}
+{% block head %} 
+    <title> My First Webpage </title> 
+{% endblock %}
 
 {% block body %}
-    <h1> Template </h1>
+    <h1> Handwritten Image Detection Model </h1>
+    <p> To upload the handwriting, please use the below button </p>
+    <form>
+        <label for = "txt">  </label> <br>
+        <input type = "file" id = "txt" name = "img" accept="image/*"> </input>
+        <button> Upload Image Here!</button>
+    </form>
 {% endblock %}
