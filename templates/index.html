@@ -7,9 +7,10 @@
 {% block body %}
     <h1> Handwritten Image Detection Model </h1>
     <p> To upload the handwriting, please use the below button </p>
-    <form>
+    <form method = "POST", action = "/create_image", , enctype = "multipart/form-data">
         <label for = "txt">  </label> <br>
-        <input type = "file" id = "txt" name = "img" accept="image/*"> </input>
-        <button> Upload Image Here!</button>
+        <input type = "file" id = "txt" name = "img" accept="image/*"> 
+        <br> <br>
+        <button type = "submit"> Upload Image Here! </button>
     </form>
 {% endblock %}
